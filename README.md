@@ -5,7 +5,7 @@ If you want to use BME280 sensor on long cable, copy two files from pico directo
 
 Connect the BME280 sensor to the i2C RPi Pico port.
 
-Connect the RPi with the RPi Pico together with the USB cable.
+Connect PC with the RPi Pico together with the USB cable.
 
 Select serial as the interface type in PC configuration.
 
