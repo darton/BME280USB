@@ -1,6 +1,6 @@
 # BME280USB
 
-- ### Temperature, Humidity, Pressure Sensor BME280 - i2C on RPi Pico
+- ### Temperature, Humidity, Pressure Sensor BME280 on RPi Pico
 If you want to use BME280 sensor on long cable, copy two files from pico directory, to RPi Pico.
 
 Connect the BME280 sensor to the i2C RPi Pico port.
