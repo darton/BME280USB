@@ -7,9 +7,9 @@ Connect the BME280 sensor to the i2C RPi Pico port.
 
 Connect the RPi with the RPi Pico together with the USB cable.
 
-Select serial as the interface type in RPiMS configuration for the BME280 sensor.
+Select serial as the interface type in PC configuration.
 
- - ### Temperature, Humidity, Pressure Sensor BME280
+ - ### Wiring diagram
 ```
 RPi Pico  [3V3  Pin 36]------------------------------ [VCC]  BME280
 RPi Pico  [GP16 Pin 21] ----------------------------- [SDA]  BME280
