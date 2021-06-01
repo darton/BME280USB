@@ -11,14 +11,15 @@ Select serial as the interface type in PC configuration.
 
  - ### Wiring diagram
 ```
-RPi Pico  [3V3  Pin 36]------------------------------ [VCC]  BME280
+RPi Pico  [GP22 Pin 29]------------------------------ [VCC]  BME280
 RPi Pico  [GP16 Pin 21] ----------------------------- [SDA]  BME280
 RPi Pico  [GP17 Pin 22] ----------------------------- [SDC]  BME280
-RPi Pico  [GND  Pin 23] ----------------------------- [GND]  BME280
+RPi Pico  [GND  Pin 38] ----------------------------- [GND]  BME280
+RPi Pico  [3v3  Pin 36] ----------------------------- [CS]   BME280
 ```
 
 ```
-BME280 [i2c] <------> [i2C] RPi Pico [USB] <----------------------------------->  RPi [USB]
+BME280 [i2c] <------> [i2C] RPi Pico [USB] <--------------> RPi [USB]
 ```
 
 ## B.o.M - Bill of Materials
