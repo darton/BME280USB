@@ -18,7 +18,7 @@ Connect PC with the RPi Pico together with the USB cable.
 BME280 [i2c] <------> [i2C] RPi Pico [USB] <--------------> RPi [USB]
 ```
 
-Select serial as the interface type in PC configuration.
+Select proper USB port number in RPiMS configuration.
 
 
 ## B.o.M - Bill of Materials
