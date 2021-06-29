@@ -1,13 +1,9 @@
 # BME280USB
 
 - ### Temperature, Humidity, Pressure Sensor BME280 on RPi Pico
-If you want to use BME280 sensor on long cable, copy two files from pico directory, to RPi Pico.
+If you want to use BME280 sensor on long cable, copy two files bme280_float.py and main.py to RPi Pico.
 
-Connect the BME280 sensor to the i2C RPi Pico port.
-
-Connect PC with the RPi Pico together with the USB cable.
-
-Select serial as the interface type in PC configuration.
+Connect the BME280 sensor to the i2C RPi Pico port using wiring diagram below.
 
  - ### Wiring diagram
 ```
@@ -17,10 +13,13 @@ RPi Pico  [GP17 Pin 22] ----------------------------- [SDC]  BME280
 RPi Pico  [GND  Pin 38] ----------------------------- [GND]  BME280
 RPi Pico  [3v3  Pin 36] ----------------------------- [CS]   BME280
 ```
-
+Connect PC with the RPi Pico together with the USB cable.
 ```
 BME280 [i2c] <------> [i2C] RPi Pico [USB] <--------------> RPi [USB]
 ```
+
+Select serial as the interface type in PC configuration.
+
 
 ## B.o.M - Bill of Materials
 
