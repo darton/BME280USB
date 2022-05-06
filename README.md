@@ -15,7 +15,7 @@ RPi Pico  [3v3  Pin 36] ----------------------------- [CS]   BME280
 ```
 Connect PC with the RPi Pico together with the USB cable.
 ```
-BME280 [i2c] <------> [i2C] RPi Pico [USB] <--------------> RPi [USB]
+BME280 [i2c] <-- 4 wire cable --> [i2C] Raspberry Pi Pico [USB] <-- USB cable --> Raspberry Pi [USB]
 ```
 
 Select proper USB port number in RPiMS configuration.
