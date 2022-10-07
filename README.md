@@ -18,7 +18,7 @@ Connect PC with the RPi Pico together with the USB cable.
 BME280 [i2c] <-- 4 wire cable --> [i2C] Raspberry Pi Pico [USB] <-- USB cable --> Raspberry Pi [USB]
 ```
 
-Select proper USB port number in RPiMS configuration.
+Select proper USB/serial port number in terminal configuration.
 
 
 ## B.o.M - Bill of Materials
