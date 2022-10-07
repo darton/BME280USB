@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, StringVar, Label
 import threading
 import serial
 from time import sleep
