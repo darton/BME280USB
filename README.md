@@ -18,7 +18,7 @@ Connect PC with the RPi Pico together with the USB cable.
 BME280 [i2c] <-- 4 wire cable --> [i2C] Raspberry Pi Pico [USB] <-- USB cable --> PC/RaspberryPi [USB]
 ```
 
-Select proper USB/serial port number in terminal configuration or use bme280usb_gui.py to show measured values in the pop-up window under Windows or Linux
+Select proper serial port number in terminal configuration or use bme280usb_gui.py to show measured values in the pop-up window under Windows or Linux
 
 
 ## B.o.M - Bill of Materials
