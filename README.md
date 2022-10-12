@@ -15,7 +15,7 @@ RPi Pico  [3v3  Pin 36] ----------------------------- [CS]   BME280
 ```
 Connect PC with the RPi Pico together with the USB cable.
 ```
-BME280 [i2c] <-- 4 wire cable --> [i2C] Raspberry Pi Pico [USB] <-- USB cable --> Raspberry Pi  or PC [USB]
+BME280 [i2c] <-- 4 wire cable --> [i2C] Raspberry Pi Pico [USB] <-- USB cable --> PC/RaspberryPi [USB]
 ```
 
 Select proper USB/serial port number in terminal configuration or use bme280usb_gui.py to show measured values in the pop-up window under Windows or Linux
