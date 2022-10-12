@@ -1,5 +1,4 @@
 from tkinter import Tk, StringVar, Label
-import threading
 import serial
 from time import sleep
 import platform
