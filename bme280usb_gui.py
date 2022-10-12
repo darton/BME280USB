@@ -13,10 +13,21 @@ lbl.pack()
 
 _os = platform.system()
 
+error_msg = "Raspberry Pico is not connected"
+
+
 if _os == 'Linux':
-    serialPort = serial.Serial(port="/dev/serial/by-id/usb-MicroPython_Board_in_FS_mode_e66038b713882033-if00", baudrate=115200, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+    try:
+        serialPort = serial.Serial(port="/dev/serial/by-id/usb-MicroPython_Board_in_FS_mode_e66038b713882033-if00", baudrate=115200, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+    except:
+        print(error_msg)
+        sys.exit()
 elif _os == 'Windows':
-    serialPort = serial.Serial(port="COM6", baudrate=115200, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+    try:
+        serialPort = serial.Serial(port="COM6", baudrate=115200, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+    except:
+        print(error_msg)
+        sys.exit()
 else:
     print('Unknown operating system')
     sys.exit()
@@ -24,17 +35,20 @@ else:
 serialString = ""
 
 while True:
-	if serialPort.in_waiting > 0:
-		serialString = serialPort.readline()
-		try:
-			data = serialString.decode("Ascii")
-			sleep(1)
-			a = data.split(" ")
-			t = round(int(a[1])/1000,1)
-			h = int(round(int(a[2])/1000,0))
-			p = int(round(int(a[3])/1000,0))
-			var.set(f'{t}°C {h}% {p}hPa' )
-			root.update()
-			
-		except:
-			break
+    try:
+        if serialPort.in_waiting > 0:
+            serialString = serialPort.readline()
+            try:
+                data = serialString.decode("Ascii")
+                sleep(1)
+                a = data.split(" ")
+                t = round(int(a[1])/1000,1)
+                h = int(round(int(a[2])/1000,0))
+                p = int(round(int(a[3])/1000,0))
+                var.set(f'{t}°C {h}% {p}hPa' )
+                root.update()
+            except:
+                break
+    except:
+        print(error_msg)
+        sys.exit()
