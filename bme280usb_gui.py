@@ -53,8 +53,8 @@ while True:
                 t = round(int(a[1])/1000,1)
                 h = int(round(int(a[2])/1000,0))
                 p = int(round(int(a[3])/1000,0))
-                print(t, h, p)
-                var.set(f'{t}°C {h}% {p}hPa' )
+                #print(f'{t}°C {h}% {p}hPa')
+                var.set(f'{t}°C {h}% {p}hPa')
                 root.update()
             except:
                 break
