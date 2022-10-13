@@ -10,6 +10,7 @@ Connect the BME280 sensor to the i2C RPi Pico port using wiring diagram below.
 RPi Pico  [GP22 Pin 29]------------------------------ [VCC]  BME280
 RPi Pico  [GP16 Pin 21] ----------------------------- [SDA]  BME280
 RPi Pico  [GP17 Pin 22] ----------------------------- [SDC]  BME280
+RPi Pico  [3v3  Pin 36] ----------------------------- [CS]   BME280
 RPi Pico  [GND  Pin 38] ----------------------------- [GND]  BME280
 ```
 Connect PC with the RPi Pico together with the USB cable.
