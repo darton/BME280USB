@@ -4,7 +4,6 @@ from time import sleep
 import platform
 import sys
 
-TK_SILENCE_DEPRECATION=1
 
 root = Tk()
 root.title('BME280')
