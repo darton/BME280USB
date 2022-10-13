@@ -18,7 +18,7 @@ error_msg = "Raspberry Pico is not connected"
 
 if _os == 'Linux':
     try:
-        serialPort = serial.Serial(port="/dev/serial/by-id/usb-MicroPython_Board_in_FS_mode_e66038b713882033-if00", baudrate=115200, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+        serialPort = serial.Serial(port="/dev/ttyACM0", baudrate=115200, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
     except:
         print(error_msg)
         sys.exit()
