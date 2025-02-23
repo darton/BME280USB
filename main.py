@@ -1,4 +1,4 @@
-from machine import Pin, I2C, reset
+import machine
 import bme280_float as bme280
 from utime import sleep_ms
 import sys
